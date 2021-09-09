@@ -1,0 +1,227 @@
+:root {
+  /* -------------- Gradient Color -------------- */
+  --grad-UI-1: #A73EF5;     /* Grad-1 */
+  --grad-UI-2: #FB53E1;     /* Grad-1 */
+  --grad-UI-3: #d6ff7f ;    /* Grad-2 */
+  --grad-UI-4: #00b3cc ;    /* Grad-2 */
+  --grad-UI-5: #d6ff7f ;    /* Grad-3 */
+  --grad-UI-6: #00b3cc ;    /* Grad-3 */
+  --grad-UI-7: #f40076 ;    /* Grad-4 */
+  --grad-UI-8: #df98fa ;    /* Grad-4 */
+  --grad-UI-9: #D73350 ;    /* Grad-5 */
+  --grad-UI-10: #FC6F69 ;   /* Grad-5 */
+  --grad-UI-11: #37CCFF ;   /* Grad-6 */
+  --grad-UI-12: #7B22FF ;   /* Grad-6 */
+  --grad-UI-13: #FFCD2B ;   /* Grad-7 */
+  --grad-UI-14: #FB07EE ;   /* Grad-7 */
+  --grad-UI-15: #cb5eee ;   /* Grad-8 */
+  --grad-UI-16: #4be1ec ;   /* Grad-8 */
+  --grad-UI-17: #FFA70F ;   /* Grad-9 */
+  --grad-UI-18: #E33ED9 ;   /* Grad-9 */
+  --grad-UI-19: #00FB8E ;   /* Grad-10 */
+  --grad-UI-20: #4101B7 ;   /* Grad-10 */
+  --grad-UI-21: #47a6f3 ;   /* Grad-11 */
+  --grad-UI-22: #003cc5 ;   /* Grad-11 */
+  --grad-UI-23: #1ABCF4 ;   /* Grad-12 */
+  --grad-UI-24: #5DEFB8 ;   /* Grad-12 */
+  --grad-UI-25: #FE0C6B ;   /* Grad-13 */
+  --grad-UI-26: #29055E ;   /* Grad-13 */
+  --grad-UI-27: #df98fa ;   /* Grad-14 */
+  --grad-UI-28: #9055ff ;   /* Grad-14 */
+  --grad-UI-29: #1BF67B ;   /* Grad-15 */
+  --grad-UI-30: #0D736E ;   /* Grad-15 */
+  --grad-UI-31: #31cf4580;  /* Grad-16 */
+  --grad-UI-32: #50e3c2;    /* Grad-16 */
+
+  /* -------------- Color -------------- */
+  --primary: #3DB2FF;
+  --secondary: #FFB830;
+  --white: #ffffff;
+  --black: #000000;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --red: #FF2442;
+  --orange: #FF5200;
+  --green: #54E346;
+  --purple: #C244FB;
+  --pink: #FF577F;
+  --cyan: #0dcaf0;
+  --success: #28ff4c;
+  --warning: #ffc107;
+  --danger: #FF4848;
+  --infor: #0dcaf0;
+  --disable: #cac3c3;
+
+  /* -------------- More -------------- */
+  --font-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-size: 1em;
+  --text-body: #242222;
+  --bg-body: #eeeeee;
+  --text-disable: #817c7c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans-serif);
+  font-size: var(--font-size);
+  color: var(--text-body);
+  background: var(--bg-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+/* -------------- Text -------------- */
+
+.grad-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* -------------- Button -------------- */
+
+.btn {
+  display: block;
+  padding: 12px 48px;
+  border-radius: 3.125em;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary);
+}
+
+.btn.btn--success {
+  background-color: var(--success);
+}
+
+.btn.btn--warning {
+  background-color: var(--warning);
+}
+
+.btn.btn--danger {
+  background-color: var(--danger);
+}
+
+.btn.btn--infor {
+  background-color: var(--infor);
+}
+
+.btn.btn--disable {
+  background-color: var(--disable);
+  color: var(--text-disable);
+  cursor: default !important;
+}
+
+.btn.btn--disabled {
+  opacity: 0.6;
+  cursor: default !important;
+}
+
+.btn-size-m {
+  padding: 16px 64px;
+}
+
+.btn-size-l {
+  padding: 20px 100px;
+}
+
+.btn-fullwidth {
+  padding: 12px 0;
+  width: 100%;
+}
+
+/* -------------- Input -------------- */
+.inputForm {
+  height: 2.5em;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 0 12px;
+  font-size: 1em;
+}
+
+/* -------------- Width -------------- */
+
+.w-25 {
+  width: 25%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 70%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* -------------- Grid System -------------- */
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1280px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
