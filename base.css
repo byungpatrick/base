@@ -32,7 +32,11 @@
   --grad-UI-30: #0D736E ;   /* Grad-15 */
   --grad-UI-31: #31cf4580;  /* Grad-16 */
   --grad-UI-32: #50e3c2;    /* Grad-16 */
-
+  --grad-UI-33: #00e1ff34;  /* Grad-17 */ /* Navigation */
+  --grad-UI-34: #e100ff40;  /* Grad-17 */ /* Navigation */
+  --grad-UI-35: #ffc40040;  /* Grad-18 */ /* Navigation-light */
+  --grad-UI-36: #f140ff60;  /* Grad-18 */ /* Navigation-light */
+  
   /* -------------- Color -------------- */
   --primary: #3DB2FF;
   --secondary: #FFB830;
